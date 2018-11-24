@@ -21,7 +21,7 @@ const devs = ["280749272498962432"];
 const adminprefix = ["-"];
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
-      if (!devs.includes(message.author.id)) return;
+      if (!developers.includes(message.author.id)) return;
 
   if (message.content.startsWith(adminprefix + 'ply')) {
     Client.user.setGame(argresult);
