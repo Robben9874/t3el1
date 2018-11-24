@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
+const developers = ["371060496276783104"]
 
 client.on('message', message => {
   if (!message.guild) return;
@@ -17,7 +18,7 @@ client.on('message', message => {
   }
 });
 
-const devs = ["280749272498962432"];
+const devs = ["371060496276783104"];
 const adminprefix = ["-"];
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
