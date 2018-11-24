@@ -4,7 +4,7 @@ const client = new Discord.Client();
 
 client.on('message', message => {
   if (!message.guild) return;
-  if (message.content === 'تعال') {
+   if(message.content === 'come'){
     if (message.member.voiceChannel) {
       message.member.voiceChannel.join()
         .then(connection => { 
