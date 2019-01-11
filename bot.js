@@ -13,7 +13,6 @@ client.on('message', message => {
     if (message.member.voiceChannel) {
       message.member.voiceChannel.join()
         .then(connection => { 
-          message.reply('kk <3');
         })
         .catch(console.log);
     } else {
