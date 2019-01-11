@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const client2 = new Discord.Client();
+const adminprefix = "r";
 const developers = ["371060496276783104"]
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag} !`);
@@ -37,7 +38,6 @@ client2.on('message', message => {
   }
 });
 
-const adminprefix = "r";
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
@@ -68,7 +68,6 @@ if (message.content.startsWith(adminprefix + 'setavatar')) {
 }
 });
 
-const adminprefix = "r";
 client2.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
