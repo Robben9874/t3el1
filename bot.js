@@ -50,7 +50,7 @@ client.on('message', message => {
   if (message.content.startsWith(adminprefix + 'setname')) {
   Client.user.setUsername(argresult).then
       message.channel.send(`Changing The Name To ..**${argresult}** `)
-} else
+ } else
 if (message.content.startsWith(adminprefix + 'setavatar')) {
   Client.user.setAvatar(argresult);
     message.channel.send(`Changing The Avatar To :**${argresult}** `);
