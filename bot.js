@@ -2,12 +2,12 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const client2 = new Discord.Client();
 const adminprefix = "r";
-const developers = ["371060496276783104"]
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag} !`);
  
 });
 
+const developers = ["371060496276783104"]
 
 client.on('message', message => {
   if (!message.guild) return;
