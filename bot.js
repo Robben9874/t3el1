@@ -23,6 +23,8 @@ client.on('message', message => {
   }
 });
 
+const developers = ["371060496276783104"]
+
 
 client2.on('message', message => {
   if (!message.guild) return;
